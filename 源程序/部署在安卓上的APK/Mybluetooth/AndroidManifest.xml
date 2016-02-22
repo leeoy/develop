@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhn.mybluetooth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	
+    
+    <!-- 在SDCard中创建与删除文件的权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!-- 往SDCard写入数据的权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zhn.mybluetooth.Activity_index"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+      <activity android:name="com.zhn.mybluetooth.AdvancedActivity"></activity>	
+        
+        <activity android:name="com.zhn.mybluetooth.MainActivity"></activity>
+        <activity android:name="com.zhn.mybluetooth.ConnectActivity"></activity>
+        <activity android:name=".DiscoveryActivity"></activity>
+        
+         <activity android:name="com.zhn.bluetooth.MainActivity"
+                  
+                   android:theme="@android:style/Theme.Light">
+           
+        </activity>
+      <activity android:name="com.android.settings.tether.Tether" />
+      
+        <activity android:name="com.zhn.bluetooth.ServerActivity"
+            android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name="com.zhn.bluetooth.ServerActivity1"></activity>		
+		<activity android:name="com.zhn.bluetooth.ClientActivity"
+		    android:theme="@android:style/Theme.Light"></activity>
+		<activity android:name="com.zhn.bluetooth.ClientActivity1"
+		    android:theme="@android:style/Theme.Light"></activity>
+		<activity android:name="com.zhn.bluetooth.ClientActivity2"
+		    android:theme="@android:style/Theme.Light"></activity>	
+		<activity 
+            android:name="com.zhn.file.SelectFileActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
+		
+		
+		<service android:name="com.zhn.bluetoothUtil.BluetoothServerService"></service>
+		<service android:name="com.zhn.bluetoothUtil.BluetoothClientService"></service>
+		
+		  <receiver android:name="RingBroadcastReceiver" android:exported="false">
+            <intent-filter>
+               <action android:name="com.yarin.android.RingProfile.RV_CHANGED" />
+               <action android:name="com.yarin.android.RingProfile.RING_CHANGED" />
+               <action android:name="com.yarin.android.RingProfile.VIBRATE_CHANGED" />
+               <action android:name="com.yarin.android.RingProfile.SILENT_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+    
+        
+ 
+
+	
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>news_add</servlet-name>
+    <servlet-class>com.zhn.action.news_add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>news_show</servlet-name>
+    <servlet-class>com.zhn.action.news_show</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>news_show_one</servlet-name>
+    <servlet-class>com.zhn.action.news_show_one</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>news_del</servlet-name>
+    <servlet-class>com.zhn.action.news_del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>news_update</servlet-name>
+    <servlet-class>com.zhn.action.news_update</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>upPage</servlet-name>
+    <servlet-class>com.zhn.action.uppage</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>news_add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>news_show</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>news_show_one</servlet-name>
+    <url-pattern>/show_one</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>news_del</servlet-name>
+    <url-pattern>/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>news_update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>upPage</servlet-name>
+    <url-pattern>/upPage</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index1.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

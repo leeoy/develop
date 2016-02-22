@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShowList</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserShowList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShow</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserShow</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentShownoList</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentShownoList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentShowyesList</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentShowyesList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>indentShownoList</servlet-name>
+    <url-pattern>/no</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentShowyesList</servlet-name>
+    <url-pattern>/yes</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAdd</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDelete</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserUpdate</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserUpdateDo</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserUpdateDo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserPwdUpdate</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserPwdUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserPwdUpdateDo</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserPwdUpdateDo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>ruanko.shortrent.action.AdminLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houselist</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houselist</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>foundbyhouseid</servlet-name>
+    <servlet-class>ruanko.shortrent.action.foundbyhouseid</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updatehouse</servlet-name>
+    <servlet-class>ruanko.shortrent.action.updatehouse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delethouse</servlet-name>
+    <servlet-class>ruanko.shortrent.action.delethouse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addhouse</servlet-name>
+    <servlet-class>ruanko.shortrent.action.addhouse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deletehouse</servlet-name>
+    <servlet-class>ruanko.shortrent.action.deletehouse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>image</servlet-name>
+    <servlet-class>ruanko.shortrent.action.image</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserPwdBack</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserPwdBack</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserPwdBackUn</servlet-name>
+    <servlet-class>ruanko.shortrent.action.UserPwdBackUn</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Houseshow</servlet-name>
+    <servlet-class>ruanko.shortrent.action.Houseshow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeHouseState</servlet-name>
+    <servlet-class>ruanko.shortrent.action.ChangeHouseState</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>days</servlet-name>
+    <servlet-class>ruanko.shortrent.action.daysShow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>days</servlet-name>
+    <url-pattern>/days</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserPwdBack</servlet-name>
+    <url-pattern>/UserPwdBack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPwdBackUn</servlet-name>
+    <url-pattern>/UserPwdBackUn</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houselist</servlet-name>
+    <url-pattern>/houselist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>foundbyhouseid</servlet-name>
+    <url-pattern>/foundbyhouseid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatehouse</servlet-name>
+    <url-pattern>/updatehouse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delethouse</servlet-name>
+    <url-pattern>/delethouse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addhouse</servlet-name>
+    <url-pattern>/addhouse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deletehouse</servlet-name>
+    <url-pattern>/deletehouse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowList</servlet-name>
+    <url-pattern>/UserShowList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShow</servlet-name>
+    <url-pattern>/UserShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAdd</servlet-name>
+    <url-pattern>/UserAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDelete</servlet-name>
+    <url-pattern>/UserDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdate</servlet-name>
+    <url-pattern>/UserUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateDo</servlet-name>
+    <url-pattern>/UserUpdateDo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPwdUpdate</servlet-name>
+    <url-pattern>/UserPwdUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPwdUpdateDo</servlet-name>
+    <url-pattern>/UserPwdUpdateDo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Houseshow</servlet-name>
+    <url-pattern>/Houseshow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeHouseState</servlet-name>
+    <url-pattern>/ChangeHouseState</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailShowList</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailShowList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailShow</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailAdd</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailDelete</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailShowListnoread</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailShowListnoread</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailShowListread</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailShowListread</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailUpdate</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mailUpdate</servlet-class>
+  </servlet>
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>mailShowList</servlet-name>
+    <url-pattern>/mailShowList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailShow</servlet-name>
+    <url-pattern>/mailShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailAdd</servlet-name>
+    <url-pattern>/mailAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailDelete</servlet-name>
+    <url-pattern>/mailDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailShowListnoread</servlet-name>
+    <url-pattern>/mailShowListnoread</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailShowListread</servlet-name>
+    <url-pattern>/mailShowListread</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mailUpdate</servlet-name>
+    <url-pattern>/mailUpdate</url-pattern>
+  </servlet-mapping>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseShowsearch</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houseShowsearch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseShow</servlet-name>
+    <servlet-class>ruanko.shortrent.action.house_Show</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseShowsearch1</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houseShowsearch1</servlet-class>
+  </servlet>
+
+
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>houseShowsearch</servlet-name>
+    <url-pattern>/houseShowsearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houseShow</servlet-name>
+    <url-pattern>/houseShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houseShowsearch1</servlet-name>
+    <url-pattern>/houseShowsearch1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentShowList</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentShowList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentShow</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentAdd</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentDelete</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseshowlogin</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houseshowlogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseshowsearchlogin</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houseshowsearchlogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>houseshowsearch1login</servlet-name>
+    <servlet-class>ruanko.shortrent.action.houseshowsearch1login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>foundimage</servlet-name>
+    <servlet-class>ruanko.shortrent.action.foundimage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentshownolistadmin</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentshownolistadmin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentupdate</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentupdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indentDeleteuser</servlet-name>
+    <servlet-class>ruanko.shortrent.action.indentDeleteuser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mail_add</servlet-name>
+    <servlet-class>ruanko.shortrent.action.mail_add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sendbox</servlet-name>
+    <servlet-class>ruanko.shortrent.action.sendbox</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>findmore</servlet-name>
+    <servlet-class>ruanko.shortrent.action.findmore</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>ruanko.shortrent.action.Upload</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>indentShowList</servlet-name>
+    <url-pattern>/indentShowList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentShow</servlet-name>
+    <url-pattern>/indentShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentAdd</servlet-name>
+    <url-pattern>/indentAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentDelete</servlet-name>
+    <url-pattern>/indentDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houseshowlogin</servlet-name>
+    <url-pattern>/houseshowlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houseshowsearchlogin</servlet-name>
+    <url-pattern>/houseshowsearchlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>houseshowsearch1login</servlet-name>
+    <url-pattern>/houseshowsearch1login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>foundimage</servlet-name>
+    <url-pattern>/foundimage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentshownolistadmin</servlet-name>
+    <url-pattern>/indentshownolistadmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentupdate</servlet-name>
+    <url-pattern>/indentupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indentDeleteuser</servlet-name>
+    <url-pattern>/indentDeleteuser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mail_add</servlet-name>
+    <url-pattern>/mail_add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sendbox</servlet-name>
+    <url-pattern>/sendbox</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>findmore</servlet-name>
+    <url-pattern>/findmore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/Upload</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+  
+</web-app>
